@@ -1,3 +1,5 @@
+<img src="https://github.com/SaKi1309/TrainingsTracker/blob/master/TrainigsTracker/imgs/logo.png" width="100" />
+
 # TrainingsTracker
 The TrainingsTracker is a tool to save trainings, to monitor muscle growth and body fat and to optimize training results. 
 
