@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3788ACC1-2CB9-4E04-B82C-A52176C1CFAC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TrainigsTracker</RootNamespace>
+    <AssemblyName>TrainigsTracker</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Misc\AthleteGraph.cs" />
+    <Compile Include="Misc\EnumDefinitions.cs" />
+    <Compile Include="Misc\ExerciseDataSet.cs" />
+    <Compile Include="Misc\TrainingStatistics.cs" />
+    <Compile Include="Trainings\SpecialExercise.cs" />
+    <Compile Include="Trainings\TrainingsdayRegister.cs" />
+    <Compile Include="UserInterface\NewFatMeasurementForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserInterface\NewFatMeasurementForm.Designer.cs">
+      <DependentUpon>NewFatMeasurementForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserInterface\AthleteGraphForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserInterface\AthleteGraphForm.Designer.cs">
+      <DependentUpon>AthleteGraphForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserInterface\GraphViewerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserInterface\GraphViewerForm.Designer.cs">
+      <DependentUpon>GraphViewerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Misc\ExerciseGraph.cs" />
+    <Compile Include="Misc\Duration.cs" />
+    <Compile Include="Body\Athlete.cs" />
+    <Compile Include="Body\BodyPartRegister.cs" />
+    <Compile Include="Trainings\ExerciseRegister.cs" />
+    <Compile Include="UserInterface\NewAthleteForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserInterface\NewAthleteForm.Designer.cs">
+      <DependentUpon>NewAthleteForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserInterface\NewBodyPartForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserInterface\NewBodyPartForm.Designer.cs">
+      <DependentUpon>NewBodyPartForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserInterface\NewMeasurementForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserInterface\NewMeasurementForm.Designer.cs">
+      <DependentUpon>NewMeasurementForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserInterface\RegisterExerciseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserInterface\RegisterExerciseForm.Designer.cs">
+      <DependentUpon>RegisterExerciseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Trainings\CardioExercise.cs" />
+    <Compile Include="UserInterface\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserInterface\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Trainings\BodyWeightExercise.cs" />
+    <Compile Include="Trainings\MachineExercise.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Trainings\Exercise.cs" />
+    <Compile Include="Trainings\TrainingsDay.cs" />
+    <Compile Include="Trainings\ExerciseSet.cs" />
+    <Compile Include="UserInterface\NewTrainingsDayForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserInterface\NewTrainingsDayForm.Designer.cs">
+      <DependentUpon>NewTrainingsDayForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserInterface\StartUpProjectForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserInterface\StartUpProjectForm.Designer.cs">
+      <DependentUpon>StartUpProjectForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Body\WeightRegister.cs" />
+    <EmbeddedResource Include="UserInterface\NewFatMeasurementForm.resx">
+      <DependentUpon>NewFatMeasurementForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserInterface\AthleteGraphForm.resx">
+      <DependentUpon>AthleteGraphForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserInterface\GraphViewerForm.resx">
+      <DependentUpon>GraphViewerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserInterface\NewAthleteForm.resx">
+      <DependentUpon>NewAthleteForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserInterface\NewBodyPartForm.resx">
+      <DependentUpon>NewBodyPartForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserInterface\NewMeasurementForm.resx">
+      <DependentUpon>NewMeasurementForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserInterface\RegisterExerciseForm.resx">
+      <DependentUpon>RegisterExerciseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserInterface\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="UserInterface\NewTrainingsDayForm.resx">
+      <DependentUpon>NewTrainingsDayForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserInterface\StartUpProjectForm.resx">
+      <DependentUpon>StartUpProjectForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
