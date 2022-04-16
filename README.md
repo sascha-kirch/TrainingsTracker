@@ -17,3 +17,6 @@ The TrainingsTracker is a tool to save trainings, to monitor muscle growth and b
 
 **Check your trainings frequency:**
 > <img src="https://github.com/SaKi1309/TrainingsTracker/blob/master/TrainigsTracker/imgs/time_stat.PNG" width="600" />
+
+# Repo Stats
+![](https://komarev.com/ghpvc/?username=saschakirchtrainingstracker&color=yellow) since 16.04.2022
